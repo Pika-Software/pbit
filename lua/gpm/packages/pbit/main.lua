@@ -101,3 +101,12 @@ local baseFormat = "%d.%d.%d.%d"
 function IPAddressFromInt(i)
 	return baseFormat:format( Vec4FromInt( i ) )
 end
+
+local COLOR = FindMetaTable("Color")
+function COLOR:ToInt()
+    return Vec4ToInt( self["r"], self["g"], self["b"], self["a"] )
+end
+
+function COLOR:FromInt(i)
+    self["r"], self["g"], self["b"], self["a"] = Vec4FromInt( i )
+end
