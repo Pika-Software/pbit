@@ -1,5 +1,5 @@
 # pBit
-Normal bitwise library without overflowing.
+Bitwise library that works without overflow.
 
 ## Functions
 - lib.IPAddressFromInt( `number` x )
