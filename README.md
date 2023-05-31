@@ -22,7 +22,7 @@ Bitwise library that works without overflow.
 
 ### Example (ip4 to int)
 ```lua
-local pbit = install( "packages/pbit.lua" )
+local pbit = install( "packages/pbit" )
 
 local st = SysTime()
 local bits = pbit.IPAddressToInt( "192.168.0.1" )
